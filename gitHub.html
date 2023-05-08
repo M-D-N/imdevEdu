@@ -1,0 +1,293 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>IMDEV | Education - GitHub</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			.modal {
+				display: none;
+				position: fixed;
+				z-index: 1;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				overflow: auto;
+				background-color: rgba(0, 0, 0, 0.8);
+			}
+
+			.modalTest-wrapper{
+				position: absolute;
+				top: 20px;
+				right: 40px;
+				font-size: 50px;
+				cursor: pointer;
+			}
+			.modal-content {
+				position: relative;
+				background-color: #fefefe;
+				margin: 15% auto;
+				padding: 20px;
+				border: 1px solid #888;
+				width: 80%;
+				z-index: 3;
+			}
+
+			.modal-content button {
+				margin-top: 20px;
+			}
+
+			#result {
+				display: none;
+			}
+			@media(max-width: 512px){
+				.modalTest-wrapper{
+					font-size: 20px;
+				}
+			}
+
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>IMDEV</strong> Educaition</a>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+									</ul>
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>GitHub</h1>
+									</header>
+
+									<span class="image main"><img src="images/GItHub.gif" alt="" /></span>
+
+									<p>GitHub - это платформа для хранения, управления и совместной работы с проектами на основе Git, системы контроля версий. GitHub позволяет разработчикам загружать свой код, управлять версиями проекта, предлагать свои изменения в проект других разработчиков и общаться с сообществом.</p>
+
+									<hr class="major" />
+
+									<h2>Концепции и термины</h2>
+									<p>Вот некоторые основные концепции и термины, которые вам нужно знать, чтобы начать использовать GitHub:</p>
+									<ul>
+										<li>Репозиторий (Repository) - это хранилище проекта, в котором хранятся файлы, документация, код и т.д. Репозиторий можно создать как на локальной машине, так и на удаленном сервере (например, на GitHub).</li>
+										<li>Клонирование (Clone) - это процесс загрузки локальной копии репозитория с удаленного сервера на локальную машину.</li>
+										<li>Ветка (Branch) - это копия репозитория, созданная для разработки новых функций или исправления ошибок без влияния на основную ветку проекта. Ветки позволяют нескольким разработчикам работать над одним и тем же проектом одновременно.</li>
+										<li>Коммит (Commit) - это сохранение изменений в локальной копии репозитория. Коммит содержит описание изменений, которые были внесены, и может включать несколько файлов.</li>
+										<li>Отправка изменений (Push) - это процесс отправки локальных коммитов на удаленный сервер.</li>
+										<li>Запрос на объединение (Pull Request) - это предложение внести изменения из ветки одного разработчика в другую ветку проекта. Запрос на объединение позволяет сделать код более читаемым, отслеживаемым и понятным для других разработчиков.</li>
+										<li>Интерфейс командной строки (Command Line Interface) - это интерфейс, который позволяет пользователю взаимодействовать с программой с помощью команд, вводимых с клавиатуры.</li>
+										<li>Конфликт слияния (Merge Conflict) - это ситуация, когда два разработчика вносят изменения в один и тот же файл и пытаются объединить эти изменения. GitHub сообщает о конфликте слияния и позволяет разработчикам разрешить его вручную.</li>
+									</ul>
+									<p>Это лишь краткий обзор основных концепций и терминов GitHub. Однако, чтобы использовать GitHub на практике, необходимо знать больше подробностей о каждом из них.</p>
+
+									<hr class="major" />
+									
+									<h2>Git</h2>
+									<p>Git - это система контроля версий, которая используется для управления изменениями в репозитории. Git позволяет отслеживать изменения в коде, переключаться между различными версиями проекта и возвращаться к предыдущим версиям при необходимости.</p>
+
+									<hr class="major" />
+
+									<h2>Fork</h2>
+									<p>Форк (Fork) - это создание копии чужого репозитория на своем аккаунте. Форк позволяет работать с кодом проекта независимо от оригинального репозитория и вносить свои изменения без непосредственного доступа к оригинальному репозиторию.</p>
+
+									<hr class="major" />
+
+									<h2>Config</h2>
+									<p>Конфигурационный файл (Config) - это файл, который содержит информацию о настройках Git, таких как имя пользователя, адрес электронной почты и т.д.</p>
+
+									<hr class="major" />
+
+									<h2>Ignore</h2>
+									<p>Игнорируемые файлы (Ignore) - это файлы, которые не должны быть отслеживаемы Git. Игнорируемые файлы могут содержать конфиденциальную информацию, временные файлы или другую информацию, которая не должна быть включена в репозиторий.</p>
+
+									<hr class="major" />
+
+									<h2>Pull </h2>
+									<p>Pull - это процесс скачивания изменений с удаленного репозитория на локальную машину. Pull позволяет получать обновления от других разработчиков и работать с последней версией проекта.</p>
+
+									<hr class="major" />
+
+									<h2>Push </h2>
+									<p>Push - это процесс отправки изменений с локальной машины на удаленный сервер. Push позволяет делиться своими изменениями с другими разработчиками и вносить свой вклад в проект.</p>
+
+									<hr class="major" />
+
+									<h2>Issue </h2>
+									<p>Issue - это открытое обсуждение проблемы или задачи, которая требует решения. Issue позволяет разработчикам обсуждать проблемы, задавать вопросы и находить решения вместе.</p>
+
+									<hr class="major" />
+
+									<h2>Code Review</h2>
+									<p>Код-ревью (Code Review) - это процесс проверки кода на наличие ошибок, уязвимостей и соответствие стандартам проекта. Код-ревью позволяет обнаруживать ошибки и улучшать качество кода.</p>
+
+									<hr class="major" />
+
+									<p>Это некоторые из основных концепций и терминов, связанных с GitHub и Git. Они помогут вам начать работу с платформой и управлять своими проектами, но чтобы использовать GitHub на практике, вам также нужно понимать основные команды Git. Некоторые из наиболее часто используемых команд Git включают в себя:</p>
+									<ul>
+										<li>git init: Инициализирует новый репозиторий в текущей директории</li>
+										<li>git clone: Клонирует репозиторий с удаленного сервера на локальную машину</li>
+										<li>git add: Добавляет изменения в индекс для подготовки к коммиту</li>
+										<li>git commit: Создает новый коммит с сохраненными изменениями в репозитории</li>
+										<li>git push: Отправляет изменения с локальной машины на удаленный сервер</li>
+										<li>git pull: Загружает изменения с удаленного сервера на локальную машину</li>
+										<li>git branch: Показывает список веток в репозитории</li>
+										<li>git checkout: Переключается между различными ветками или коммитами</li>
+										<li>git merge: Объединяет две ветки в одну</li>
+										<li>git stash: Сохраняет изменения, не закоммиченные в отдельном хранилище, чтобы можно было вернуться к ним позже.</li>
+									</ul>
+
+									<hr class="major" />
+
+									<p>Помимо этого, на GitHub существует множество дополнительных функций, которые могут быть полезны для разработки и управления проектами, таких как pull request, code review, GitHub Actions и другие.</p>
+
+									<hr class="major" />
+
+									<p>Использование Git и GitHub позволяет не только управлять своими проектами, но и сотрудничать с другими разработчиками, делиться кодом и учиться у других. Если вы хотите стать опытным разработчиком, важно понимать основы Git и GitHub и использовать их в своей работе.</p>
+
+									<hr class="major" />									
+
+									<h2>Видео урок</h2>
+
+									<div class="row">
+										<div class="col-12" style="display: flex; justify-content: center;">
+											<iframe width="877" height="498" src="https://www.youtube.com/embed/zZBiln_2FhM" title="Git и GitHub Курс Для Новичков" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+										</div>
+									</div>
+
+									<hr class="major" />
+									
+									<!-- <a href="#!" class="button fit">Пройти тест</a> -->
+									<button id="open-modal" class="button fit">Открыть тест</button>
+
+								</section>
+
+								<!-- TEST QUIZ -->
+
+
+								<div id="modal" class="modal">
+									<div class="modal-content">
+										<div id="modalCloseTestBtn" class="modalTest-wrapper">&#10006;</div>
+										<h2>Тест</h2>
+										<form id="quiz-form">
+											<p>1. Что такое Git и как он связан с GitHub?</p>
+											<label><input type="radio" name="question1" value="a">a) Git - это инструмент управления версиями, а GitHub - это онлайн-платформа для хранения и совместной работы с Git-репозиториями.</label><br>
+											<label><input type="radio" name="question1" value="b">b) Git - это онлайн-платформа для хранения и совместной работы с репозиториями, а GitHub - это инструмент управления версиями.</label><br>
+											<label><input type="radio" name="question1" value="c">c) Git и GitHub - это две разные вещи, которые не имеют между собой связи.</label><br>
+
+											<p>2. Как создать новый репозиторий на GitHub?</p>
+											<label><input type="radio" name="question2" value="a">a) Нажмите кнопку "New repository" на странице GitHub, выберите тип репозитория (публичный или приватный) и задайте имя.</label><br>
+											<label><input type="radio" name="question2" value="b">b) Новый репозиторий не может быть создан на GitHub.</label><br>
+											<label><input type="radio" name="question2" value="c">c) Нажмите кнопку "New project" на странице GitHub и выберите тип репозитория.</label><br>
+
+											<p>3. Какой командой можно скопировать удаленный репозиторий на локальный компьютер?</p>
+											<label><input type="radio" name="question3" value="a">a) git clone [url репозитория]</label><br>
+											<label><input type="radio" name="question3" value="b">b) git push [url репозитория]</label><br>
+											<label><input type="radio" name="question3" value="c">c) git pull [url репозитория]</label><br>
+
+											<p>4. Что такое pull request в GitHub?</p>
+											<label><input type="radio" name="question4" value="a">Это запрос на получение данных из удаленного репозитория.</label><br>
+											<label><input type="radio" name="question4" value="b">Это запрос на слияние ваших изменений в удаленный репозиторий.</label><br>
+											<label><input type="radio" name="question4" value="c">Это запрос на удаление репозитория.</label><br>
+
+											<p>5. Как создать новую ветку в репозитории на GitHub?</p>
+											<label><input type="radio" name="question5" value="a">a) Нажмите кнопку "Branch: main" на странице репозитория и введите имя новой ветки.</label><br>
+											<label><input type="radio" name="question5" value="b">b) Новая ветка не может быть создана на GitHub.</label><br>
+											<label><input type="radio" name="question5" value="c">c) Нажмите кнопку "New branch" на странице репозитория и введите имя новой ветки.</label><br>
+
+											<p>6. Что такое Git Workflow?</p>
+											<label><input type="radio" name="question6" value="a">a) Это планирование рабочих процессов в Git.</label><br>
+											<label><input type="radio" name="question6" value="b">b) Это набор правил и процессов, которые разработчики следуют при работе с Git.</label><br>
+											<label><input type="radio" name="question6" value="c">c) Это процесс создания нового репозитория в Git.</label><br>
+											<br>
+											<input type="submit" class="button fit" value="Отправить">
+										</form>
+									</div>
+								</div>
+
+								<div id="result" class="modal">
+								<div class="modal-content">
+									<h2>Результаты</h2>
+									<p id="score"></p>
+									<button id="close-result-modal" class="button fit">Закрыть</button>
+								</div>
+								</div>
+
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+				<div id="sidebar">
+					<div class="inner">
+
+						<!-- Menu -->
+							<nav id="menu">
+								<header class="major">
+									<h2>Меню</h2>
+								</header>
+								<ul>
+									<li><a href="index.html">Главная</a></li>
+									<li><a href="profile.html">Профиль</a></li>
+									<li>
+										<span class="opener">Курсы</span>
+										<ul>
+											<li><a href="htmlCSS.html">HTML & CSS</a></li>
+                                            <li><a href="gitHub.html">Github</a></li>
+                                            <li><a href="js.html">JavaScript</a></li>
+                                            <li><a href="php.html">PHP</a></li>
+										</ul>
+									</li>
+								</ul>
+							</nav>
+
+						<!-- Section -->
+							<section>
+								<header class="major">
+									<h2>Контакты</h2>
+								</header>
+								<p>Данная платформа была создана в оброзовательных целях и курсы данного проекта не несут никакой ответственности и не принадлежат к распростронению файлов данного курса.</p>
+								<ul class="contact">
+									<li class="icon solid fa-envelope"><a href="mailto:mardonov.mexriddin1997@gmail.com">mardonov.mexriddin1997@gmail.com</a></li>
+									<li class="icon solid fa-phone">+7 (917) 559 94 74</li>
+									<li class="icon solid fa-home">Россия, г. Москва<br />
+									МГТУ"СТАНКИН"</li>
+								</ul>
+							</section>
+
+						<!-- Footer -->
+							<footer id="footer">
+								<p class="copyright">&copy; Все права защищены МГТУ "СТАНКИН" <a href="https://stankin.ru">Официальный сайт</a>. Выполнили: Мардонов Мехриддин, Давтян Артем, Люманов Осман.</p>
+							</footer>
+
+					</div>
+				</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/test.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>IMDEV | Education - HTML&CSS</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			.modal {
+				display: none;
+				position: fixed;
+				z-index: 1;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				overflow: auto;
+				background-color: rgba(0, 0, 0, 0.8);
+			}
+
+			.modalTest-wrapper{
+				position: absolute;
+				top: 20px;
+				right: 40px;
+				font-size: 50px;
+				cursor: pointer;
+			}
+			.modal-content {
+				position: relative;
+				background-color: #fefefe;
+				margin: 15% auto;
+				padding: 20px;
+				border: 1px solid #888;
+				width: 80%;
+				z-index: 3;
+			}
+
+			.modal-content button {
+				margin-top: 20px;
+			}
+
+			#result {
+				display: none;
+			}
+
+			@media(max-width: 512px){
+				.modalTest-wrapper{
+					font-size: 20px;
+				}
+			}
+
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>IMDEV</strong> Educaition</a>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+									</ul>
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>HTML & CSS</h1>
+									</header>
+
+									<span class="image main"><img src="images/html&css.gif" alt="" /></span>
+
+									<p>HTML и CSS являются основными языками для создания веб-страниц. HTML используется для структурирования и организации содержимого страницы, а CSS - для задания её визуального оформления. В данном обучении мы рассмотрим основы HTML и CSS, необходимые для создания веб-страниц курсов по веб-программированию.</p>
+
+									<hr class="major" />
+
+									<h2>HTML</h2>
+									<p>HTML (HyperText Markup Language) - это язык разметки, используемый для создания структуры веб-страницы. Он состоит из набора тегов, которые определяют различные элементы страницы, такие как заголовки, параграфы, списки, ссылки, изображения и т.д.</p>
+
+									<hr class="major" />
+
+									<h2>Основы HTML</h2>
+									<p>Ниже приведены основные элементы HTML, необходимые для создания веб-страниц:</p>
+									<ul>
+										<li><strong>!DOCTYPE html</strong> - это директива, которая определяет тип документа как HTML.</li>
+										<li><strong>html</strong> - это корневой элемент, который содержит все другие элементы страницы.</li>
+										<li><strong>head</strong>  - это элемент, который содержит метаданные страницы, такие как заголовок, описание, ключевые слова, ссылки на стили и т.д.</li>
+										<li><strong>title</strong> - это элемент, который задает заголовок страницы, который отображается в верхней части браузера.</li>
+										<li><strong>body</strong> - это элемент, который содержит основное содержимое страницы, такое как текст, изображения, таблицы, формы и т.д.</li>
+										<li><strong>h1-h6</strong> - это элементы для создания заголовков разного уровня, от <strong>h1 (самый крупный)</strong>  до<strong> h6 (самый мелкий)</strong>.</li>
+										<li><strong>p</strong> - это элемент для создания абзаца текста.</li>
+										<li><strong>ul</strong> - это элемент для создания неупорядоченного списка <strong>(с маркерами)</strong> .</li>
+										<li><strong>ol</strong> - это элемент для создания упорядоченного списка <strong>(с цифрами)</strong>.</li>
+										<li><strong>li</strong> - это элемент для создания элемента списка.</li>
+										<li><strong>a</strong> - это элемент для создания ссылки. Он может содержать атрибут <strong>href</strong>, который задает адрес страницы или файла, на который ссылается ссылка.</li>
+										<li><strong>img</strong> - это элемент для вставки изображения. Он может содержать атрибуты <strong>src</strong> (адрес изображения) и <strong>alt</strong> (альтернативный текст, который отображается, если изображение не может быть загружено).</li>
+									</ul>
+
+									<hr class="major" />
+
+									<h2>Пример HTML-кода</h2>
+									<span class="image fit">
+										<img src="images/html&cssExample.png" alt="">
+									</span>
+
+									<hr class="major" />
+
+									<h2>Расширенные возможности HTML</h2>
+									<p>HTML также поддерживает более продвинутые функции, такие как встроенные таблицы, формы, видео и аудио, а также элементы для создания интерактивных приложений, таких как <strong>canvas</strong> и <strong>svg</strong>. Однако, для этого уровня обучения мы остановимся на базовых элементах HTML.</p>
+
+									<hr class="major" />
+
+									<h2>CSS</h2>
+									<p>CSS (Cascading Style Sheets) - это язык таблиц стилей, который используется для задания внешнего вида веб-страниц. Он позволяет определять стили для различных элементов страницы, таких как цвет, размер, шрифт, отступы и т.д. Стили можно задавать внутри тегов HTML, но на практике используют отдельный файл CSS.</p>
+
+									<hr class="major" />
+
+									<h2>Основы CSS</h2>
+									<p>
+										<span class="image right">
+											<strong>Пример CSS-кода</strong>
+											<img src="images/cssExemple.png" alt="">
+										</span>
+										
+										<ul>
+											<strong>Ниже приведены основные элементы CSS, необходимые для оформления веб-страниц:</strong>
+											<li>Селекторы - это элементы CSS, которые определяют, какие элементы страницы будут оформлены. Например, h1 определяет стиль для всех элементов заголовка первого уровня (h1).</li>
+											<li>Свойства - это элементы CSS, которые задают стиль для выбранных элементов. Например, color задает цвет текста, а font-size задает размер шрифта.</li>
+											<li>Значения - это конкретные значения свойств, которые задаются для выбранных элементов. Например, color: red; задает красный цвет текста.</li>
+										</ul>
+									</p>
+
+									<hr class="major" />
+
+									<p>В приведенном примере CSS-кода, мы задали стили для элементов body, h1, p, ul, a и img. Например, мы установили шрифт Arial для текста внутри элемента body, установили круглые маркеры для элемента ul и установили максимальную ширину изображения до 100%, чтобы изображение было адаптивным для различных размеров экрана.</p>
+
+									<hr class="major" />
+
+									<h2>Как использовать HTML и CSS для создания веб-страниц</h2>
+									<p>
+										Чтобы создать веб-страницу, нужно создать файл HTML, в котором определены элементы, текст и изображения, которые будут на странице. Затем нужно создать файл CSS, в котором определены стили для каждого элемента на странице.
+										HTML-файл может содержать как простой текст, так и специальные элементы, такие как заголовки, абзацы, списки и изображения. Каждый элемент на странице должен быть заключен в соответствующий HTML-тег.
+										
+										CSS-файл может содержать стили для каждого элемента на странице, определяющие цвет, размер, шрифт, отступы и другие параметры стиля. Стили могут быть определены для конкретного элемента, группы элементов или для всех элементов на странице.
+										
+										Когда HTML- и CSS-файлы готовы, нужно их связать между собой, чтобы стили из CSS-файла были применены к соответствующим элементам на HTML-странице. Для этого внутри тега head HTML-страницы нужно добавить ссылку на CSS-файл, используя элемент link.
+									</p>
+
+									<span class="image fit">
+										<img src="images/css2Ex.png" alt="">
+									</span>
+
+									<p>В приведенном выше примере мы связываем HTML-страницу со стилями из файла styles.css, который содержит стили для элементов на странице.</p>
+
+									<hr class="major" />
+
+									<h2>Видео урок</h2>
+
+									<div class="row">
+										<div class="col-12" style="display: flex; justify-content: center;">
+											<iframe width="885" height="498" src="https://www.youtube.com/embed/Bmtu5eNnjK8" title="Учим HTML и CSS за 7 часов! Уроки по созданию сайтов Полный курс HTML и CSS с нуля до профессионала" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+										</div>
+									</div>
+
+									<hr class="major" />
+									
+									<!-- <a href="#!" class="button fit">Пройти тест</a> -->
+									<button id="open-modal" class="button fit">Открыть тест</button>
+
+								</section>
+
+								<!-- TEST QUIZ -->
+
+
+								<div id="modal" class="modal">
+									<div class="modal-content">
+										<div id="modalCloseTestBtn" class="modalTest-wrapper">&#10006;</div>
+										<h2>Тест</h2>
+										<form id="quiz-form">
+											<p>1. Что означает аббревиатура "HTML"?</p>
+											<label><input type="radio" name="question1" value="a">A) Hyper Text Markup Language</label><br>
+											<label><input type="radio" name="question1" value="b">B) Home Tool Markup Language</label><br>
+											<label><input type="radio" name="question1" value="c">C) Hyperlinks and Text Markup Language</label><br>
+
+											<p>2. Как создать заголовок первого уровня в HTML?</p>
+											<label><input type="radio" name="question2" value="a">A) h1 Заголовок h1</label><br>
+											<label><input type="radio" name="question2" value="b">B) h2 Заголовок h2</label><br>
+											<label><input type="radio" name="question2" value="c">C) h3 Заголовок h3</label><br>
+
+											<p>3. Как добавить веб-шрифт на страницу с помощью CSS?</p>
+											<label><input type="radio" name="question3" value="a">A) font-family: "MyWebFont";</label><br>
+											<label><input type="radio" name="question3" value="b">B) font-style: "MyWebFont";</label><br>
+											<label><input type="radio" name="question3" value="c">C) font-size: "MyWebFont";</label><br>
+
+											<p>4. Как изменить цвет текста в CSS?</p>
+											<label><input type="radio" name="question4" value="a">A) color: #000;</label><br>
+											<label><input type="radio" name="question4" value="b">B) background-color: #000;</label><br>
+											<label><input type="radio" name="question4" value="c">C) text-color: #000;</label><br>
+
+											<p>5. Как добавить границу к элементу в CSS?</p>
+											<label><input type="radio" name="question5" value="a">A) border: 1px solid #000;</label><br>
+											<label><input type="radio" name="question5" value="b">B) margin: 1px solid #000;</label><br>
+											<label><input type="radio" name="question5" value="c">C) padding: 1px solid #000;</label><br>
+
+											<p>6. Как добавить анимацию к элементу в CSS?</p>
+											<label><input type="radio" name="question6" value="a">A) animation: myanimation 1s ease-in-out;</label><br>
+											<label><input type="radio" name="question6" value="b">B) transition: myanimation 1s ease-in-out;</label><br>
+											<label><input type="radio" name="question6" value="c">C) transform: myanimation 1s ease-in-out;</label><br>
+											<br>
+											<input type="submit" class="button fit" value="Отправить">
+										</form>
+									</div>
+								</div>
+
+								<div id="result" class="modal">
+								<div class="modal-content">
+									<h2>Результаты</h2>
+									<p id="score"></p>
+									<button id="close-result-modal" class="button fit">Закрыть</button>
+								</div>
+								</div>
+
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+				<div id="sidebar">
+					<div class="inner">
+
+						<!-- Menu -->
+							<nav id="menu">
+								<header class="major">
+									<h2>Меню</h2>
+								</header>
+								<ul>
+									<li><a href="index.html">Главная</a></li>
+									<li><a href="profile.html">Профиль</a></li>
+									<li>
+										<span class="opener">Курсы</span>
+										<ul>
+											<li><a href="htmlCSS.html">HTML & CSS</a></li>
+                                            <li><a href="gitHub.html">Github</a></li>
+                                            <li><a href="js.html">JavaScript</a></li>
+                                            <li><a href="php.html">PHP</a></li>
+										</ul>
+									</li>
+								</ul>
+							</nav>
+
+						<!-- Section -->
+							<section>
+								<header class="major">
+									<h2>Контакты</h2>
+								</header>
+								<p>Данная платформа была создана в оброзовательных целях и курсы данного проекта не несут никакой ответственности и не принадлежат к распростронению файлов данного курса.</p>
+								<ul class="contact">
+									<li class="icon solid fa-envelope"><a href="mailto:mardonov.mexriddin1997@gmail.com">mardonov.mexriddin1997@gmail.com</a></li>
+									<li class="icon solid fa-phone">+7 (917) 559 94 74</li>
+									<li class="icon solid fa-home">Россия, г. Москва<br />
+									МГТУ"СТАНКИН"</li>
+								</ul>
+							</section>
+
+						<!-- Footer -->
+							<footer id="footer">
+								<p class="copyright">&copy; Все права защищены МГТУ "СТАНКИН" <a href="https://stankin.ru">Официальный сайт</a>. Выполнили: Мардонов Мехриддин, Давтян Артем, Люманов Осман.</p>
+							</footer>
+
+					</div>
+				</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/test.js"></script>
+
+	</body>
+</html>

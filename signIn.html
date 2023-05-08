@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+	<head>
+		<title>IMDEV | Education - Sign In</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+        <style>
+            #reg{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            @media(max-width: 512px){
+                .regForm{
+                    width: 100% !important;
+                }
+                .formsBtn{
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 10px;
+                    width: 100%;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .formsBtn li input,
+                .formsBtn li{
+                    width: 100% !important;
+                }
+            }
+        </style>
+	</head>
+	<body class="is-preload">
+ 
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+                            <!-- Header -->
+                            <header id="header">
+                                <a href="signUp.html" class="logo"><strong>IMDEV</strong> Educaition / Sign Up</a>
+                                <ul class="icons">
+                                    <li><a href="#" class="icon brands fa-twitter"><span class="label">Telegram</span></a></li>
+                                    <li><a href="#" class="icon brands fa-facebook-f"><span class="label">VK</span></a></li>
+                                    <li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Github</span></a></li>
+                                    <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                                    <li><a href="#" class="icon brands fa-medium-m"><span class="label">What'sapp</span></a></li>
+                                </ul>
+                            </header>
+
+                            <!-- Content -->
+							<section id="reg" class="row">
+
+                                <h3>Sign in</h3>
+
+                                <form class="col-6 regForm">
+                                    <div class="row gtr-uniform">
+                                        <div class="col-12 col-12-xsmall">
+                                            <input type="text" name="demo-name" id="login" value="" placeholder="Login" />
+                                        </div>
+                                        <div class="col-12 col-12-xsmall">
+                                            <input type="password" name="demo-email" id="password" value="" placeholder="Password" />
+                                        </div>
+                                        <!-- Break -->
+                                        <div style="display: flex; justify-content: center;" class="col-12">
+                                            <ul class="actions formsBtn">
+                                                <li><input type="button" value="Sign in" class="primary" id="loginBtn" /></li>
+                                                <li><input type="reset" value="Clear" /></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </form>
+                            </section>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+            <script src="assets/js/reg.js"></script>
+
+	</body>
+</html>

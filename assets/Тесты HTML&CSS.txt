@@ -1,0 +1,62 @@
+Что означает аббревиатура "HTML"?
+A) Hyper Text Markup Language
+B) Home Tool Markup Language
+C) Hyperlinks and Text Markup Language
+
+Как создать заголовок первого уровня в HTML?
+A) <h1>Заголовок</h1>
+B) <h2>Заголовок</h2>
+C) <h3>Заголовок</h3>
+
+Как добавить веб-шрифт на страницу с помощью CSS?
+A) font-family: "MyWebFont";
+B) font-style: "MyWebFont";
+C) font-size: "MyWebFont";
+
+Как изменить цвет текста в CSS?
+A) color: #000;
+B) background-color: #000;
+C) text-color: #000;
+
+Как сделать ссылку на другую страницу в HTML?
+A) <a href="http://www.example.com">Ссылка</a>
+B) <link href="http://www.example.com" rel="stylesheet">
+C) <img src="http://www.example.com" alt="">
+
+Как создать таблицу в HTML?
+A) <table></table>
+B) <ul></ul>
+C) <div></div>
+
+Как добавить изображение на страницу в HTML?
+A) <img src="image.jpg" alt="">
+B) <div background="image.jpg"></div>
+C) <a href="image.jpg">Ссылка</a>
+
+Как добавить границу к элементу в CSS?
+A) border: 1px solid #000;
+B) margin: 1px solid #000;
+C) padding: 1px solid #000;
+
+Как изменить размер шрифта в CSS?
+A) font-size: 16px;
+B) font-weight: bold;
+C) font-family: Arial;
+
+Как добавить анимацию к элементу в CSS?
+A) animation: myanimation 1s ease-in-out;
+B) transition: myanimation 1s ease-in-out;
+C) transform: myanimation 1s ease-in-out;
+
+Ответы:
+
+A
+A
+A
+A
+A
+A
+A
+A
+A
+A
