@@ -4,6 +4,16 @@ from apps.account.models import Profile
 from django.contrib.auth.models import User
 
 
+class RegisterSerializer(serializers.Serializer):
+    username = serializers.CharField(required=True, write_only=True)
+    first_name = serializers.CharField(required=False)
+    last_name = serializers.CharField(required=False)
+    password = serializers.CharField(required=True, write_only=True)
+
+    class Meta:
+        fields = ("username", "first_name", "last_name", "password")
+
+
 class LoginSerializer(serializers.Serializer):
     username = serializers.CharField(required=True, write_only=True)
     password = serializers.CharField(required=True, write_only=True)
