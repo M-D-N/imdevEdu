@@ -30,13 +30,13 @@ class UserDetailSerializer(serializers.ModelSerializer):
 
 class ProfileDetailSerializer(serializers.ModelSerializer):
     from apps.course.serializers import (
-        CourseListSerializer,
         AchievementDetailSerializer,
         TrialRecordDetailSerializer,
+        EnrollmentDetailSerializer,
     )
 
     user = UserDetailSerializer(read_only=True)
-    courses = CourseListSerializer(read_only=True, many=True)
+    courses = EnrollmentDetailSerializer(read_only=True, many=True)
     certificates = AchievementDetailSerializer(read_only=True, many=True)
     exam_trials = TrialRecordDetailSerializer(read_only=True, many=True)
 

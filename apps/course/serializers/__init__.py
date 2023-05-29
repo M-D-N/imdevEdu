@@ -2,6 +2,7 @@ from apps.course.serializers.course import (
     CourseListSerializer,
     CourseDetailSerializer,
     EnrollmentCreateSerializer,
+    EnrollmentDetailSerializer
 )
 
 from apps.course.serializers.exam import (

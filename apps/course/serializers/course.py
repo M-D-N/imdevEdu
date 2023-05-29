@@ -49,6 +49,17 @@ class CourseListSerializer(serializers.ModelSerializer):
             "created_at",
         )
 
+class EnrollmentDetailSerializer(serializers.ModelSerializer):
+    course = CourseDetailSerializer(read_only=True)
+    class Meta:
+        model = Enrollment
+        fields = (
+            "id",
+            "course",
+            "is_active",
+            "created_at"
+        )
+
 
 class EnrollmentCreateSerializer(serializers.ModelSerializer):
     id = serializers.UUIDField(read_only=True)
