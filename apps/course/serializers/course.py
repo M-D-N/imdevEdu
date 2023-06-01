@@ -28,6 +28,7 @@ class CourseDetailSerializer(serializers.ModelSerializer):
             "name",
             "description",
             "image",
+            "url",
             "ordering",
             "is_active",
             "created_at",
@@ -44,21 +45,19 @@ class CourseListSerializer(serializers.ModelSerializer):
             "name",
             "description",
             "image",
+            "url",
             "ordering",
             "is_active",
             "created_at",
         )
 
+
 class EnrollmentDetailSerializer(serializers.ModelSerializer):
     course = CourseDetailSerializer(read_only=True)
+
     class Meta:
         model = Enrollment
-        fields = (
-            "id",
-            "course",
-            "is_active",
-            "created_at"
-        )
+        fields = ("id", "course", "is_active", "created_at")
 
 
 class EnrollmentCreateSerializer(serializers.ModelSerializer):

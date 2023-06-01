@@ -9,6 +9,7 @@ class Course(models.Model):
     name = models.CharField(max_length=250, null=True)
     description = models.TextField(null=True, blank=True)
     image = models.FileField(null=True, upload_to="media/courses")
+    url = models.CharField(max_length=250, blank=True, null=True)
     ordering = models.PositiveIntegerField(default=0, null=True)
     is_active = models.BooleanField(default=True)
     created_at = models.DateTimeField(
